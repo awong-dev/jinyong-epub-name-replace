@@ -1,12 +1,12 @@
 #!/bin/bash
 set -e
-set -x
 
 if [ -z "$1" ]; then
   echo "$0 {pinyin, trad, simp} <filename> "
   exit 1
 fi
 
+set -x
 # Unpack it.
 rm -rf files
 unzip "${2}" -d files
